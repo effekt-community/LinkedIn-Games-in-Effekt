@@ -1,6 +1,6 @@
 # LinkedIn Games Simulator
 
-While LinkedIn itself is full of mediocre tech-content, excessive work-life-influencers and a lot (really a lot) of AI generated content that wants to show me how to create a perfect resumee, there is one corner i frequently visit: LinkedIn Games! ([https://www.linkedin.com/games/])(https://www.linkedin.com/games/)
+While LinkedIn itself is full of mediocre tech-content, excessive work-life-influencers and a lot (really a lot) of AI generated content that wants to show me how to create a perfect resumee, there is one corner i frequently visit: LinkedIn Games! ([https://www.linkedin.com/games/](https://www.linkedin.com/games/))
 Similar to the the [nytimes](https://www.nytimes.com) or even [spiegel](https://www.spiegel.de/games/) LinkedIn offers its own collection of puzzle games:
 
 * Zip (fill a grid with a continuos line while reaching cells in the correct order)

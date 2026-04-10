@@ -1,3 +1,9 @@
+> [!NOTE]
+> This is a community-maintained fork of a MIT-licensed student project in the *Effective Programming with Effects* course in winter semester 2025/2026.
+> Be warned that this is not an officially endorsed project, the code in this repository may be not idiomatic Effekt.
+> 
+> The original repository is https://github.com/LeoZieger/LinkedIn-Games-in-Effekt
+
 # LinkedIn Games Simulator
 
 While LinkedIn itself is full of mediocre tech-content, excessive work-life-influencers and a lot (really a lot) of AI generated content that wants to show me how to create a perfect resumee, there is one corner i frequently visit: LinkedIn Games! ([https://www.linkedin.com/games/](https://www.linkedin.com/games/))

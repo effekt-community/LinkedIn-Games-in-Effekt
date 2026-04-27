@@ -9,11 +9,11 @@ type Vec2i = Tuple2[Int, Int]
 def x(v: Vec2i): Int / {} = {v.first}
 def y(v: Vec2i): Int / {} = {v.second}
 
-def infixAdd(a: Vec2i, b: Vec2i): Vec2i / {} = {
+def infixPlus(a: Vec2i, b: Vec2i): Vec2i / {} = {
   (a.x + b.x, a.y + b.y)
 }
 
-def infixSub(a: Vec2i, b: Vec2i): Vec2i / {} = {
+def infixMinus(a: Vec2i, b: Vec2i): Vec2i / {} = {
   (a.x - b.x, a.y - b.y)
 }
 
@@ -33,7 +33,7 @@ def mul(v: Vec2i, k: Int): Vec2i / {} = {
   (v.x * k, v.y * k)
 }
 
-def infixMul(v: Vec2i, k: Int): Vec2i / {} = {
+def infixStar(v: Vec2i, k: Int): Vec2i / {} = {
   v.mul(k)
 }
 

@@ -846,7 +846,7 @@ def solve(wait_time: Int) {gameloop: () => Unit / {Gamestate[Cell, ConstraintTyp
         last_viz_grid = viz_grid
 
         println(Screen::clear())
-        println(show(last_viz_grid))
+        println(gamegrid::show(last_viz_grid))
 
         if(placements.isEmpty) { // TODO: Check for better uninitialized
           placements = findPlacements(last_grid, constraints)

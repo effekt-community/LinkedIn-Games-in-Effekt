@@ -239,7 +239,7 @@ def equals(a: Gamegrid[Int], b: Gamegrid[Int]): Bool / {} = {
 }
 
 def infixEq[A](a: Gamegrid[A], b: Gamegrid[A]): Bool / {} = {
-  a.equals(b)
+  a.genericEquals(b)
 }
 
 def copy[A](grid: Gamegrid[A]): Gamegrid[A] / {} = {

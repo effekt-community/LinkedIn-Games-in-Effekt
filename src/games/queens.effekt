@@ -386,7 +386,7 @@ def solve(wait_time: Int) {gameloop: () => Unit / {Gamestate[Cell, Unit]}} = {
         last_viz_grid = viz_grid
 
         println(Screen::clear())
-        println(show(last_viz_grid))
+        println(gamegrid::show(last_viz_grid))
 
         if(placements.isEmpty) {
           placements = findPlacements(last_grid)

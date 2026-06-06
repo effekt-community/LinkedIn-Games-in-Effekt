@@ -19,7 +19,7 @@ def playinterface[A, C]() {gameloop: () => Unit / {Gamestate[A, C]}} = {
     gameloop()
   } with Gamestate[A, C] {
       def getUserInput(allowed) = {
-        println(show(allowed))
+        println(gamestate::show(allowed))
 
         var ret = ""
 
@@ -32,8 +32,8 @@ def playinterface[A, C]() {gameloop: () => Unit / {Gamestate[A, C]}} = {
           }
           else {
             println(Screen::clear()) // In case of invalid input, show the screen again
-            println(show(last_grid))
-            println(show(allowed)) // + Input Options
+            println(gamegrid::show(last_grid))
+            println(gamestate::show(allowed)) // + Input Options
           }
         }
         resume(ret)
@@ -42,7 +42,7 @@ def playinterface[A, C]() {gameloop: () => Unit / {Gamestate[A, C]}} = {
       def updateGrid(grid, viz_grid, connections) = {
         last_grid = viz_grid
         println(Screen::clear())
-        println(show(last_grid))
+        println(gamegrid::show(last_grid))
         resume(())
       }
 
@@ -61,7 +61,7 @@ def main(): Unit =  {
 // TODO: Move to src/util/gamestate
 def readOption(options: List[InputOption]): String / {Console} = {
   println(Screen::clear())
-  println(show(options))
+  println(gamestate::show(options))
   var i = ""
 
   loop() {{l: Label} =>
@@ -73,7 +73,7 @@ def readOption(options: List[InputOption]): String / {Console} = {
     }
     else {
       println(Screen::clear()) // In case of invalid input, show the screen again
-      println(show(options)) // + Input Options
+      println(gamestate::show(options)) // + Input Options
     }
   }
   i

@@ -8,7 +8,7 @@ record Connection[A](from: Vec2i,
                      typ: A)
 
 def equals[A](a: Connection[A], b: Connection[A]): Bool / {} = {
-  equals(a.typ, b.typ) &&
+  genericEquals(a.typ, b.typ) &&
   ((a.from == b.from && a.to == b.to) || (a.from == b.to && a.to == b.from)) // (1,0) -> (0, 1) == (0,1) -> (1, 0)
 }
 
